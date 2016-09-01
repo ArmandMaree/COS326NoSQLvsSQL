@@ -1,0 +1,48 @@
+\documentclass[hidelinks,english]{article}
+
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{array}
+\date{\today}
+
+\graphicspath{{Pictures/}}
+\begin{document}	
+	\begin{titlepage}
+		\pagenumbering{gobble}
+		\begin{figure}[!t]
+			\includegraphics[width=\linewidth]{up_logo.png}
+		\end{figure}
+		\vspace*{\stretch{1.5}}
+		\begin{center}
+			\huge{COS 326: Database Systems}\\
+			\huge{Topic 5: NoSQL MongoDB vs SQL}\\
+			\vspace{10mm}
+		\end{center}
+		\begin{center}
+			\begin{tabular}{ c c c }
+				Grobler, Arno & Harvey, Matthias & Lochner, Amy  \\
+				\texttt{14011396} & \texttt{studentnum} & \texttt{14038600} \\
+				Madigoe, Pricilla & Maree, Armand & Obo, Diana \\
+				\texttt{13049128} & \texttt{12017800} & \texttt{13134885} \\				
+			\end{tabular}
+		\end{center}
+		\begin{center}
+			Department of Computer Science, University of Pretoria
+		\end{center}
+		\vspace*{\stretch{2.0}}
+	\end{titlepage}
+	\newpage
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	
+%	Start here with section 1
+
+%	bibliograpy starts here. Keep this at the end of the page
+	\bibliographystyle{plain}
+	\bibliography{bibfile}
+	
+\end{document}
