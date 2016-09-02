@@ -47,12 +47,18 @@
    
    \section{The Database Problem Area}
    %make subsections as you see fit
-   In today's world the most common database implementation makes use of the relational model. However, due to the increase in the amount of data collected today and considering the fact that the data is often unstructured an alternative database implementation must be considered namely NoSQL. The problem is that while unstructured data is becoming more prominent there is still a need for modest-sized databases that holds structured data. This prompts the question on whether or not NoSQL databases will replace relational databases. As there is a general move towards NoSQL databases and the increasing availability of open-source NoSQL databases it encourages the database designer to question whether he should make use of a NoSQL database. Any good database designer will not just follow the crowd but fully investigate the performance of the database. It is well known that NoSQL databases perform very well for large, unstructured collections of data but this begs the question how will a relational database fair against a NoSQL database for a modest-sized database that holds structured data and this is what was researched. \citep{parker2013comparing}
+   \paragraph\indent
+   In today's world the most common database implementation makes use of the relational model. However, due to the increase in the amount of data collected today and considering the fact that the data is often unstructured an alternative database implementation must be considered namely NoSQL. The problem is that while unstructured data is becoming more prominent there is still a need for modest-sized databases that holds structured data. This prompts the question on whether or not NoSQL databases will replace relational databases. As there is a general move towards NoSQL databases and the increasing availability of open-source NoSQL databases it encourages the database designer to question whether he should make use of a NoSQL database. It is well known that NoSQL databases perform very well for large, unstructured collections of data but this begs the question how will a relational database fair against a NoSQL database for a modest-sized database that holds structured data and this is what was researched. \citep{parker2013comparing}
    
    \section{Solution to the Problem}
    %make subsections as you see fit
+   \paragraph\indent
+   The NoSQL document and collection structure works similar to the row and table model of the relational database structure \cite{parker2013comparing} where each row has a key (unique ID) and some data item (value) \cite{upguardmysqlmongodb}. MongoDB stores most of these documents in memory which in turn speeds up the querying process significantly compared to the hard-drive querying process that the MySQL uses \cite{parker2013comparing}. The reason for this is that since the data item is stored as a single document the retrieval of these objects is faster than joining the values from separate tables \cite{upguardmysqlmongodb}. However, the NoSQL model does not quarantee a specific set of distinct values to be returned from a query, and this is where the SQL model comes in handy \cite{upguardmysqlmongodb}.
    
-   \section{Advantages & Disadvantages of the proposed solutions}
+   \paragraph\indent
+   There are a few factors that determine when a database will be more suited for a specific project. Firstly, since NoSQL databases does not conform some scheme. If the initial requirements are not clear then NoSQL will adopt changes with no complaints \cite{bucklersqlnosql}. Secondly, since NoSQL prefers the denormalization of data it is significantly faster when it comes to queries, but at the cost of update speed \cite{bucklersqlnosql}. And lastly, NoSQL scales a lot better than SQL which will simplify the process of distrobuted databases should a medium sized business need to expand \cite{upguardmysqlmongodb}.
+   
+   \section{Advantages \& Disadvantages of the proposed solutions}
    %make subsections as you see fit
    
    \section{Relevance to COS326 and the business industry}
