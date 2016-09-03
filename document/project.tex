@@ -73,6 +73,12 @@ SQL DB requires additional joins in more complex schemas \cite{parker2013compari
     %make subsections as you see fit
     
     \section{Conclusion}
+    It is clear that the choice of NoSQL vs SQL is largely project dependent.
+    Projects with dynamic schemas are generally better off using NoSQL because of its flexibility.
+    NoSQL MongoDB is faster with simple queries largely because of its memory mapped files \cite{parker2013comparing} which is much faster than SQL's reading from disk (provided that there is enough memory).
+    Currently, the use of aggregate functions and querying based on non-key values is better suited to SQL.
+    Finally, when high scalability is required, NoSQL is better suited because of its suitability to distributed computing.
+
 %	bibliograpy starts here. Keep this at the end of the page
 	\bibliographystyle{plain}
 	\bibliography{bibfile}
